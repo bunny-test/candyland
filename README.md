@@ -1,2 +1,2 @@
 # candyland
-Learning Git
+Learning how to work with remote Git
