@@ -1,8 +1,7 @@
 class Cat:
     """Represent a cat."""
 
-    def __init__(self, name='cat', color='tabby',
-                 * , strength=10, will=10):
+    def __init__(self, name='cat', color='tabby', * , strength=10, will=10):
         """
         Create cat with name, color, and some stats.
         Stats are keyword-only.
