@@ -24,3 +24,17 @@ class Cat:
     def wave_tail(self):
         """Wave tail."""
         print(f"{self.name.title()} waves its {self.color} tail.")
+
+class Dog:
+    """Represent a dog."""
+
+    def __init__(self, name, owner=None):
+        """Create dog."""
+        self.name = name
+        if owner:
+            self.owner = owner
+
+    def bark(self, time=0):
+        """Bark for a given number of minutes."""
+        if time:
+            print(f"{self.name} is barking for the next {time} minutes.")
