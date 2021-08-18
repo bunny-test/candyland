@@ -6,7 +6,7 @@ class Cat:
         Create cat with name, color, and some stats.
         Stats are keyword-only.
         """
-        self.name = name
+        self.name = name.title()
         self.color = color
         self.strength = strength
         self.will = will
@@ -18,19 +18,19 @@ class Cat:
         """
         things_dropped = [k for k, v in kwargs.items() if v <= self.strength]
         for thing in things_dropped:
-            print(f"{self.name.title()} drops {thing}.")
+            print(f"{self.name} drops {thing}.")
         print(f"Total things dropped: {len(things_dropped)}.")
 
     def wave_tail(self):
         """Wave tail."""
-        print(f"{self.name.title()} waves its {self.color} tail.")
+        print(f"{self.name} waves its {self.color} tail.")
 
 class Dog:
     """Represent a dog."""
 
     def __init__(self, name, owner=None):
         """Create dog."""
-        self.name = name
+        self.name = name.title()
         if owner:
             self.owner = owner
 
