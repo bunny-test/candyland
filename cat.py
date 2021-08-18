@@ -20,3 +20,7 @@ class Cat:
         for thing in things_dropped:
             print(f"{self.name.title()} drops {thing}.")
         print(f"Total things dropped: {len(things_dropped)}.")
+
+    def wave_tail(self):
+        """Wave tail."""
+        print(f"{self.name.title()} waves its {self.color} tail.")
